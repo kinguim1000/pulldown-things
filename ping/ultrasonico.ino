@@ -1,4 +1,4 @@
-int ultra() {
+int ultra() {//definição da função ultra com retorno
   
   pinMode(pinoUltrasonico, OUTPUT);//torna o pino como saida
   digitalWrite(pinoUltrasonico, LOW);
