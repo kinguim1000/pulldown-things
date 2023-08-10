@@ -1,14 +1,14 @@
 int ultra() {
   
-  pinMode(ultrasonico, OUTPUT);
-  digitalWrite(ultrasonico, LOW);
+  pinMode(pinoUltrasonico, OUTPUT);
+  digitalWrite(pinoUltrasonico, LOW);
   delayMicroseconds(2);
-  digitalWrite(ultrasonico, HIGH);
+  digitalWrite(pinoUltrasonico, HIGH);
   delayMicroseconds(5);
-  digitalWrite(ultrasonico, LOW);
-  pinMode(ultrasonico, INPUT);
+  digitalWrite(pinoUltrasonico, LOW);
+  pinMode(pinoUltrasonico, INPUT);
   
-  long duration = pulseIn(ultrasonico, HIGH);
+  long duration = pulseIn(pinoUltrasonico, HIGH);
 
   long cm = microsecondsToCentimeters(duration);
   delay(100);
