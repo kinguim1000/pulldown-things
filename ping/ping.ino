@@ -1,5 +1,5 @@
 
-#define ultrasonico 12
+#define pinoUltrasonico 12
 
 void setup(){
   Serial.begin(9600);
